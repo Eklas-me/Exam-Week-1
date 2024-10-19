@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Arial", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+}
+
+.registration-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  width: 850px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.gender-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  width: 38%;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  flex-grow: 1;
+}
+
+.input-group input:focus {
+  border-color: #6b73ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(107, 115, 255, 0.5);
+}
+
+.gender-group {
+  /* margin-bottom: 20px; */
+  display: flex;
+  width: 18%;
+}
+
+.gender-options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.gender-options input {
+  margin-left: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #6b73ff, #000dff);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, #000dff, #6b73ff);
+}
+
+/* Responsive Css */
+@media (max-width: 768px) {
+  .registration-card {
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
